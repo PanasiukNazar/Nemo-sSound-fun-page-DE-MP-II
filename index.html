@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>NemoSound</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div
+                class="spinner-border text-primary"
+                role="status"
+                style="width: 3rem; height: 3rem"
+            ></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <nav
+            class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5"
+        >
+            <a href="index.html" class="navbar-brand ps-5 me-0">
+                <h1 class="text-white m-0">NemoSound</h1>
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler me-0"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active"
+                        >Startseite</a
+                    >
+                    <a href="about.html" class="nav-item nav-link">Über mich</a>
+                    <a href="work-with-me.html" class="nav-item nav-link"
+                        >Arbeite mit mir</a
+                    >
+                    <div class="nav-item dropdown">
+                        <a
+                            href="#"
+                            class="nav-link dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            >Seiten</a
+                        >
+                        <div class="dropdown-menu bg-light m-0">
+                            <a href="biography.html" class="dropdown-item"
+                                >Biografie</a
+                            >
+                            <a href="concerts.html" class="dropdown-item"
+                                >Kommende Konzerte</a
+                            >
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid px-0 mb-5">
+            <div
+                id="header-carousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            class="w-100"
+                            src="img/carousel-1.jpg"
+                            alt="Image"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10 text-start">
+                                        <p
+                                            class="fs-5 fw-medium text-primary text-uppercase animated slideInRight"
+                                        >
+                                            Entdecke die Welt des
+                                            schweizerischen Musiker und
+                                            Sänger-Rappers
+                                        </p>
+                                        <h1
+                                            class="display-1 text-white mb-5 animated slideInRight"
+                                        >
+                                            Willkommen bei der Nemo Mettler
+                                            Fanpage
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="w-100"
+                            src="img/carousel-2.jpg"
+                            alt="Image"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10 text-start">
+                                        <p
+                                            class="fs-5 fw-medium text-primary text-uppercase animated slideInRight"
+                                        >
+                                            Erfahre mehr über seine neuesten
+                                            Tracks, Konzerte und exklusive
+                                            Inhalte
+                                        </p>
+                                        <h1
+                                            class="display-1 text-white mb-5 animated slideInRight"
+                                        >
+                                            Tauche ein in Nemo Mettlers Musik
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Features Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative me-lg-4">
+                            <img
+                                class="img-fluid w-100"
+                                src="img/feature.jpg"
+                                alt=""
+                            />
+                            <span
+                                class="position-absolute top-50 start-100 translate-middle bg-white rounded-circle d-none d-lg-block"
+                                style="width: 120px; height: 120px"
+                            ></span>
+                            <button
+                                type="button"
+                                class="btn-play"
+                                data-bs-toggle="modal"
+                                data-src="https://www.youtube.com/embed/E_uQggU0Eec?si=hU65O6AZZ2iuClGZ"
+                                data-bs-target="#videoModal"
+                            >
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <p class="fw-medium text-uppercase text-primary mb-2">
+                            Erlebe die Energie und Leidenschaft von Nemo Mettler
+                            live
+                        </p>
+                        <h1 class="display-5 mb-4">
+                            Warum du meine Konzerte besuchen solltest
+                        </h1>
+                        <p class="mb-4">
+                            Nemo Mettlers Konzerte sind mehr als nur
+                            musikalische Darbietungen – sie sind Erlebnisse, die
+                            man nicht verpassen sollte. Als einer der
+                            herausragendsten Musiker und Sänger-Rapper der
+                            Schweiz hat Nemo die Fähigkeit, das Publikum mit
+                            seiner einzigartigen Mischung aus Rap und Gesang zu
+                            fesseln und zu begeistern. Seine Live-Auftritte sind
+                            bekannt für ihre intensive Energie, die emotionalen
+                            Geschichten und die authentische Verbindung, die er
+                            zu seinem Publikum aufbaut. Jeder Auftritt ist eine
+                            Reise durch Nemos musikalische Welt, die tief in
+                            seinen persönlichen Erfahrungen und der reichen
+                            kulturellen Vielfalt der Schweiz verwurzelt ist.
+                            Seine Songs sprechen Themen an, die von alltäglichen
+                            Herausforderungen bis hin zu sozialen
+                            Gerechtigkeitsfragen reichen, was seine Konzerte zu
+                            einer tiefgründigen und bewegenden Erfahrung macht.
+                            Die Atmosphäre bei seinen Konzerten ist
+                            elektrisierend, die Interaktionen mit dem Publikum
+                            sind herzlich und die Energie ist spürbar.
+                        </p>
+                        <div class="row gy-4">
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <div
+                                        class="flex-shrink-0 btn-lg-square rounded-circle bg-primary"
+                                    >
+                                        <i class="fa fa-check text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <h4>
+                                            Einzigartige musikalische
+                                            Erlebnisse:
+                                        </h4>
+                                        <span
+                                            >Jeder Auftritt von Nemo Mettler
+                                            bietet eine einzigartige Mischung
+                                            aus Rap und Gesang, die seine
+                                            vielseitigen musikalischen
+                                            Fähigkeiten und seinen
+                                            unverwechselbaren Stil zur Geltung
+                                            bringt. Er interpretiert seine Songs
+                                            mit solcher Intensität und Hingabe,
+                                            dass jedes Konzert zu einem
+                                            unvergesslichen Erlebnis wird.</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <div
+                                        class="flex-shrink-0 btn-lg-square rounded-circle bg-primary"
+                                    >
+                                        <i class="fa fa-check text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <h4>
+                                            Unvergessliche Live-Performance:
+                                        </h4>
+                                        <span
+                                            >Die Energie und Leidenschaft, die
+                                            Nemo in seine Live-Performances
+                                            einbringt, sind unvergleichlich.
+                                            Seine Fähigkeit, das Publikum zu
+                                            begeistern und in seinen Bann zu
+                                            ziehen, sorgt für eine
+                                            elektrisierende Atmosphäre. Ob durch
+                                            mitreißende Beats oder tiefgründige
+                                            Texte, Nemo weiß, wie er sein
+                                            Publikum auf eine emotionale Reise
+                                            mitnimmt.</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <div
+                                        class="flex-shrink-0 btn-lg-square rounded-circle bg-primary"
+                                    >
+                                        <i class="fa fa-check text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <h4>
+                                            Nähe und Interaktion mit dem
+                                            Künstler:
+                                        </h4>
+                                        <span
+                                            >Nemo Mettler ist bekannt für seine
+                                            Nähe zu seinen Fans. Während seiner
+                                            Konzerte schafft er es, eine intime
+                                            und persönliche Atmosphäre zu
+                                            erzeugen, in der sich jeder Besucher
+                                            als Teil der Show fühlt. Seine
+                                            authentischen Interaktionen und das
+                                            Teilen von Geschichten hinter den
+                                            Liedern machen die Konzerte
+                                            besonders bewegend und
+                                            verbindend.</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+        <!-- Video Modal Start -->
+        <div
+            class="modal modal-video fade"
+            id="videoModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">
+                            Mein beeindruckendes Konzert
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                class="embed-responsive-item"
+                                src=""
+                                id="video"
+                                allowfullscreen
+                                allowscriptaccess="always"
+                                allow="autoplay"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Modal End -->
+
+        <!-- Facts Start -->
+        <div class="container-fluid facts my-5 p-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <p
+                        class="fs-5 fw-medium text-primary text-uppercase animated slideInLeft"
+                    >
+                        Von den Anfängen bis zu internationalen Erfolgen
+                    </p>
+                    <h1 class="display-1 text-white mb-3 animated slideInRight">
+                        Die Reise von Nemo Mettler
+                    </h1>
+                    <p class="text-white animated slideInLeft">
+                        Nemo Mettler, ein Name, der in der schweizerischen
+                        Musikszene mittlerweile eine feste Größe ist, begann
+                        seine Reise in den bescheidenen Straßen von Zürich.
+                        Schon als Kind zeigte Nemo eine außergewöhnliche
+                        Leidenschaft für Musik. Mit einer Kombination aus
+                        angeborenem Talent und unermüdlicher Hingabe entwickelte
+                        er sich schnell zu einem bemerkenswerten Künstler. Seine
+                        Musik, eine einzigartige Mischung aus Rap und Gesang,
+                        spiegelt nicht nur seine persönliche Reise wider,
+                        sondern auch die kulturellen und sozialen Einflüsse, die
+                        ihn geprägt haben. In seinen frühen Jahren
+                        experimentierte Nemo mit verschiedenen Musikstilen, von
+                        Hip-Hop bis zu klassischen Schweizer Volksliedern. Diese
+                        Vielseitigkeit ermöglichte es ihm, eine breite Palette
+                        von musikalischen Techniken zu meistern und eine
+                        einzigartige Klanglandschaft zu schaffen, die sowohl
+                        traditionell als auch modern ist. Seine Texte sind
+                        tiefgründig und reflektieren oft persönliche
+                        Erfahrungen, soziale Gerechtigkeit und die
+                        Herausforderungen des täglichen Lebens. Der Durchbruch
+                        kam mit der Veröffentlichung seines Debütalbums, das
+                        sofort auf große Resonanz stieß. Songs wie "Schweizer
+                        Seele" und "Stadt der Träume" brachten ihm nicht nur
+                        nationale Anerkennung, sondern auch eine wachsende
+                        Fangemeinde im Ausland. Nemos Fähigkeit, Geschichten
+                        durch seine Musik zu erzählen, hat ihm eine besondere
+                        Verbindung zu seinen Zuhörern ermöglicht. Jeder Track
+                        ist eine Reise, die das Publikum mit auf eine emotionale
+                        Achterbahnfahrt nimmt. Neben seiner Musikkarriere ist
+                        Nemo auch als leidenschaftlicher Aktivist bekannt. Er
+                        setzt sich für verschiedene soziale Projekte ein,
+                        unterstützt lokale Künstler und engagiert sich für die
+                        Förderung der Musikbildung unter Jugendlichen. Seine
+                        Hingabe, nicht nur als Musiker, sondern auch als Mentor
+                        und Philanthrop, hat ihm Respekt und Bewunderung weit
+                        über die Musikszene hinaus eingebracht. Heute, als
+                        etablierter Künstler, arbeitet Nemo kontinuierlich an
+                        neuen Projekten und strebt danach, seine Musik weiter zu
+                        entwickeln und neue Wege zu gehen. Seine Konzerte sind
+                        ein Beweis für seine Energie und Leidenschaft, mit
+                        kraftvollen Auftritten, die das Publikum begeistern und
+                        inspirieren. Willkommen auf der Nemo Mettler Fanpage, wo
+                        du die neuesten Nachrichten, exklusive Inhalte und
+                        Einblicke in das Leben eines der faszinierendsten
+                        Musiker der Schweiz findest. Tauche ein in die Welt von
+                        Nemo Mettler und erlebe die Magie seiner Musik hautnah.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Facts End -->
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto pb-4 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                >
+                    <p class="fw-medium text-uppercase text-primary mb-2">
+                        Einblicke in das Leben von Nemo Mettler jenseits der
+                        Bühne
+                    </p>
+                    <h1 class="display-5 mb-4">Mein persönliches Leben</h1>
+                    <p>
+                        Als vielseitiger Musiker und Sänger-Rapper hat Nemo
+                        Mettler nicht nur eine beeindruckende Karriere im
+                        Rampenlicht, sondern auch ein reichhaltiges persönliches
+                        Leben, das seine Kunst inspiriert und bereichert.
+                        Jenseits der Bühne und des Rampenlichts ist Nemo ein
+                        Mensch mit tiefen Werten, vielfältigen Interessen und
+                        einer starken Verbindung zu seiner Familie und seinen
+                        Freunden. In diesem Abschnitt erfährst du mehr über die
+                        Person hinter der Musik – seine Hobbys, Leidenschaften,
+                        Erfahrungen und das, was ihn wirklich antreibt. Nemo ist
+                        bekannt für seine Bodenständigkeit und seine Liebe zur
+                        Natur. Wenn er nicht gerade im Studio oder auf der Bühne
+                        steht, verbringt er gerne Zeit im Freien, erkundet die
+                        Schweizer Alpen und genießt die Ruhe und Schönheit der
+                        Natur. Diese Momente der Entspannung und Reflexion sind
+                        wichtig für sein Wohlbefinden und bieten ihm neue
+                        Perspektiven, die er in seine Musik einfließen lässt.
+                        Neben seiner Liebe zur Natur ist Nemo auch ein
+                        engagierter Unterstützer von sozialen Projekten und
+                        wohltätigen Organisationen. Er setzt sich aktiv für die
+                        Rechte und das Wohlbefinden benachteiligter Gruppen ein
+                        und nutzt seine Bekanntheit, um auf wichtige
+                        gesellschaftliche Themen aufmerksam zu machen. Sein
+                        Engagement für andere spiegelt sich auch in seiner Musik
+                        wider, die oft tiefgründige Botschaften und soziale
+                        Kommentare enthält.
+                    </p>
+                </div>
+                <div class="row gy-5 gx-4">
+                    <div
+                        class="col-md-6 col-lg-4 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="service-item">
+                            <img
+                                class="img-fluid"
+                                src="img/service-1.jpg"
+                                alt=""
+                            />
+                            <div class="service-img">
+                                <img
+                                    class="img-fluid"
+                                    src="img/service-1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="service-detail">
+                                <div class="service-title">
+                                    <hr class="w-25" />
+                                    <h3 class="mb-0">Familie und Freunde</h3>
+                                    <hr class="w-25" />
+                                </div>
+                                <div class="service-text">
+                                    <p class="text-white mb-0">
+                                        Für Nemo steht die Familie an erster
+                                        Stelle. Er pflegt enge Beziehungen zu
+                                        seinen Eltern und Geschwistern und
+                                        verbringt gerne Zeit mit seinen
+                                        Freunden. Diese engen Bindungen geben
+                                        ihm Kraft und Inspiration. Seine Familie
+                                        und Freunde sind seine größten
+                                        Unterstützer und spielen eine zentrale
+                                        Rolle in seinem Leben, sowohl persönlich
+                                        als auch beruflich.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-4 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="service-item">
+                            <img
+                                class="img-fluid"
+                                src="img/service-2.jpg"
+                                alt=""
+                            />
+                            <div class="service-img">
+                                <img
+                                    class="img-fluid"
+                                    src="img/service-2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="service-detail">
+                                <div class="service-title">
+                                    <hr class="w-25" />
+                                    <h3 class="mb-0">Natur und Abenteuer</h3>
+                                    <hr class="w-25" />
+                                </div>
+                                <div class="service-text">
+                                    <p class="text-white mb-0">
+                                        Nemo liebt es, die Natur zu erkunden und
+                                        neue Abenteuer zu erleben. Wanderungen
+                                        in den Schweizer Alpen, Campingausflüge
+                                        und Fahrradtouren sind nur einige der
+                                        Aktivitäten, die er in seiner Freizeit
+                                        genießt. Diese Erlebnisse helfen ihm,
+                                        den Kopf frei zu bekommen und neue
+                                        Energie für seine musikalischen Projekte
+                                        zu tanken. Die Natur ist für ihn eine
+                                        unerschöpfliche Quelle der Inspiration.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="service-item">
+                            <img
+                                class="img-fluid"
+                                src="img/service-3.jpg"
+                                alt=""
+                            />
+                            <div class="service-img">
+                                <img
+                                    class="img-fluid"
+                                    src="img/service-3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="service-detail">
+                                <div class="service-title">
+                                    <hr class="w-25" />
+                                    <h3 class="mb-0">Soziales Engagement</h3>
+                                    <hr class="w-25" />
+                                </div>
+                                <div class="service-text">
+                                    <p class="text-white mb-0">
+                                        Nemo ist nicht nur ein talentierter
+                                        Musiker, sondern auch ein engagierter
+                                        Bürger. Er unterstützt verschiedene
+                                        wohltätige Organisationen und setzt sich
+                                        für soziale Gerechtigkeit ein. Sein
+                                        Engagement reicht von der Unterstützung
+                                        lokaler Initiativen bis hin zu
+                                        internationalen Projekten. Er glaubt
+                                        fest daran, dass jeder Einzelne die
+                                        Macht hat, positive Veränderungen in der
+                                        Gesellschaft herbeizuführen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Blog Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto wow fadeInUp"
+                    data-wow-delay="0.1s"
+                >
+                    <p class="fw-medium text-uppercase text-primary mb-2">
+                        Bleiben Sie auf dem Laufenden mit den neuesten
+                        Entwicklungen
+                    </p>
+                    <h1 class="display-5 mb-5">
+                        Neueste Nachrichten über Nemo Mettler
+                    </h1>
+                </div>
+                <div class="row g-4">
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="team-item">
+                            <img
+                                class="img-fluid"
+                                src="img/blog-1.jpg"
+                                alt=""
+                            />
+                            <div class="d-flex">
+                                <div
+                                    class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
+                                    style="padding: 20px"
+                                >
+                                    <h5>
+                                        Exklusives Interview: Nemo Mettler
+                                        spricht über seine neue EP
+                                    </h5>
+                                    <span class="text-primary"
+                                        >In einem exklusiven Interview gibt Nemo
+                                        Mettler tiefe Einblicke in die
+                                        Entstehung seiner neuen EP. Er spricht
+                                        über die kreativen Prozesse, die ihn zu
+                                        den neuen Songs inspiriert haben, und
+                                        teilt persönliche Geschichten hinter den
+                                        Texten. Die EP, die verschiedene
+                                        Musikstile miteinander verbindet, zeigt
+                                        eine neue Facette von Nemos
+                                        künstlerischem Talent und verspricht,
+                                        seine Fans zu begeistern. Erfahre, wie
+                                        er sich weiterentwickelt hat und welche
+                                        Botschaften er mit seiner Musik
+                                        vermitteln möchte.</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="team-item">
+                            <img
+                                class="img-fluid"
+                                src="img/blog-2.jpg"
+                                alt=""
+                            />
+                            <div class="d-flex">
+                                <div
+                                    class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
+                                    style="padding: 20px"
+                                >
+                                    <h5>
+                                        Ankündigung der nächsten Tour: Nemo
+                                        Mettler geht auf Konzertreise
+                                    </h5>
+                                    <span class="text-primary"
+                                        >Große Neuigkeiten für alle Fans: Nemo
+                                        Mettler hat offiziell seine nächste
+                                        Konzerttour angekündigt! Die Tour wird
+                                        in mehreren Städten in der Schweiz und
+                                        im Ausland Halt machen und verspricht
+                                        unvergessliche Live-Erlebnisse. In
+                                        seinen Konzerten wird Nemo nicht nur
+                                        seine größten Hits, sondern auch neue
+                                        Songs aus seiner kommenden EP performen.
+                                        Die Fans können sich auf eine
+                                        spektakuläre Show freuen, die
+                                        musikalische Vielfalt und energetische
+                                        Performances bietet. Sichere dir jetzt
+                                        deine Tickets und sei dabei!</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="team-item">
+                            <img
+                                class="img-fluid"
+                                src="img/blog-3.jpg"
+                                alt=""
+                            />
+                            <div class="d-flex">
+                                <div
+                                    class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
+                                    style="padding: 20px"
+                                >
+                                    <h5>
+                                        Kollaboration mit internationalem Star:
+                                        Neue Single in Arbeit
+                                    </h5>
+                                    <span class="text-primary"
+                                        >Nemo Mettler hat sich mit einem
+                                        international bekannten Künstler
+                                        zusammengetan, um an einer neuen Single
+                                        zu arbeiten. Diese aufregende
+                                        Kollaboration verspricht ein Highlight
+                                        seiner musikalischen Karriere zu werden.
+                                        Beide Künstler bringen ihre
+                                        einzigartigen Stile und Talente in das
+                                        Projekt ein, was zu einem innovativen
+                                        und mitreißenden Track führen wird. Die
+                                        Veröffentlichung der Single ist für den
+                                        kommenden Monat geplant, und die Fans
+                                        können es kaum erwarten, das Ergebnis
+                                        dieser spannenden Zusammenarbeit zu
+                                        hören.</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4">Über mich</h5>
+                        <p class="mb-2">
+                            Willkommen auf der offiziellen Fanseite von Nemo
+                            Mettler! Hier findest du alles Wissenswerte über den
+                            talentierten Musiker und Sänger-Rapper aus der
+                            Schweiz.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4">Schnelle Links</h5>
+                        <a class="btn btn-link" href="">Über uns</a>
+                        <a class="btn btn-link" href="">Kontakt</a>
+                        <a class="btn btn-link" href="terms-of-use.html"
+                            >Nutzungsbedingungen</a
+                        >
+                        <a class="btn btn-link" href="privacy-policy.html"
+                            >Datenschutzrichtlinie</a
+                        >
+                        <a class="btn btn-link" href="bussines-model.html"
+                            >Geschäftsmodell</a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4">Rundbrief</h5>
+                        <p>
+                            Melden Sie sich für unseren Newsletter an, um mit
+                            uns in Kontakt zu bleiben
+                        </p>
+                        <div class="position-relative w-100">
+                            <input
+                                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                                type="text"
+                                placeholder="Deine E-Mail"
+                                id="email"
+                            />
+                            <button
+                                type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                                id="submit"
+                                onclick="sendForm()"
+                            >
+                                Anmeldung
+                            </button>
+                            <div id="result" style="color: red"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container text-center">
+                <p class="mb-2">
+                    Haftungsausschluss: Die Informationen auf dieser Website
+                    sind nicht dazu gedacht, Rechtsberatung zu bieten oder eine
+                    Anwalts-Mandanten-Beziehung zu begründen. Die
+                    bereitgestellten Informationen, Dokumente oder Formulare
+                    dienen nur allgemeinen Informationszwecken und sollten nicht
+                    als Rechtsberatung betrachtet werden. Gesetze ändern sich
+                    regelmäßig; daher können die Informationen auf dieser
+                    Website ungenau sein. Es ist von entscheidender Bedeutung,
+                    dass Sie rechtlichen Rat einholen, um Ihre Rechte und
+                    Pflichten gemäß dem geltenden Recht und basierend auf Ihren
+                    spezifischen Umständen zu ermitteln.
+                </p>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a
+            href="#"
+            class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper">
+            <div class="sub-wrapper">
+                <div>
+                    <i class="bx bx-cookie"></i>
+                    <h2 style="text-align: center">Cookie-Zustimmung</h2>
+                </div>
+
+                <div class="data">
+                    <p id="cookie-text">
+                        Diese Website verwendet Cookies, um Ihnen ein besseres
+                        und besseres und relevanteres Surferlebnis auf der
+                        Website zu ermöglichen.
+                        <a href="#">Mehr erfahren...</a>
+                    </p>
+                </div>
+
+                <div class="buttons">
+                    <button class="cookie-button" id="acceptBtn">
+                        Akzeptieren
+                    </button>
+                    <button class="cookie-button" id="declineBtn">
+                        Rückgang
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/contact-form.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
